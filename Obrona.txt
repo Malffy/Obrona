@@ -1,6 +1,17 @@
-5.
-BFS (Breadth - First Search) - polega na przechodzeniu po grafie poziomami, zaczynająć od dowolnie wybranego wezłe, odwiedzając wszystkie sąsiadujące z nim węzły a następnie sąsiadów tych sąsiadujących wezłów. Struktura danych stosowana do kontrolowania kolejności odwiedzin to kolejka.
-DFS(Depth-First Search) - polega naprzechodzeniu po grafie jak najgłebiej, zaczynając od dowolnie wybranego węzła, a następnie przechdząć przez kolejne węzły wzdłuż krwaędzi, dopóki nie napktka węzła bez nieodwiedzonych sąsiadów, a gdy to zrobi cofa się do poprzedniego węzła, by kontynuować przeszukiwanie w nieodwiedzonych jeszcze gałęziach. Struktura danych stosowana do kontrolowania kolejności odwiedzin jest stos.
-Algorytm Dijkstra - Algorytm znajduję w grafie wszystkie najkrótsze ścieżki, pomiędzy wybranym węzłem a wszystkimi pozostałymi, wyliczając przy tym koszt przejścia każdej z tych ścieżek. Jest to algorytm zachłanny.
-Po
+5.Metody przeszukiwania grafów i wyznaczania njakrótszej ścieżki na przykładzie algorytmu Dijkstry.
+BFS (Breadth - First Search) - polega na przechodzeniu po grafie poziomami, zaczynająć od dowolnie wybranego wezłe, 
+odwiedzając wszystkie sąsiadujące z nim węzły a następnie sąsiadów tych sąsiadujących wezłów. 
+Struktura danych stosowana do kontrolowania kolejności odwiedzin to kolejka.
+
+DFS(Depth-First Search) - polega na przechodzeniu po grafie jak najgłębiej, zaczynając od dowolnie wybranego węzła,
+a następnie przechdząć przez kolejne węzły wzdłuż krawędzi, dopóki nie napktka węzła bez nieodwiedzonych sąsiadów,
+a gdy to zrobi cofa się do poprzedniego węzła, by kontynuować przeszukiwanie w nieodwiedzonych jeszcze gałęziach.
+Struktura danych stosowana do kontrolowania kolejności odwiedzin jest stos.
+
+Algorytm Dijkstra - Algorytm znajduję w grafie wszystkie najkrótsze ścieżki, pomiędzy wybranym węzłem a wszystkimi pozostałymi, 
+wyliczając przy tym koszt przejścia każdej z tych ścieżek. Jest to algorytm zachłanny.
+
+Pojęcie releksacji: Jeżeli (d[u] + c(u,v) < d[v]) to (d[v] = d[u] + c(u,v)) d - dystans, c - koszt
+Symol nieskończoności "∞" - stawiamy nad nad wierzchołkiem gdy, nie ma bezpośredniej krawędzi z jednego wierzchołka do drugiego,
+następnie rekurencyjnie wybieramy wierzchołek o najmniejszej wadze i dokonujemy relaksacji.
 
